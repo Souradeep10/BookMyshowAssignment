@@ -1,0 +1,33 @@
+<html>
+
+<head>
+<title>The jQuery Selector Example</title>
+<script type='text/javascript' src="D:\Assignment_3\testCalback.js">
+</script>
+<script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+</script>
+<script type='text/javascript'>
+$(document).ready(function(){
+//alert("1st");
+function fun1(){
+    alert("Fun1 Function called" );
+	//funMngr.markDone();
+}
+function fun2(){
+    alert("Fun2 Function called" );
+}
+function fun3(){
+    alert("Fun3 Function called" );
+}
+//alert("inside");
+var funMngr = new TestFun(finalFun);
+//alert(funMngr);
+funMngr.RegisterFunction ( fun1 );
+funMngr.RegisterFunction ( fun2 );
+funMngr.RegisterFunction ( fun3 );
+funMngr.Start();
+});
+
+</script>
+</head>
+</html>
